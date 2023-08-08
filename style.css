@@ -79,6 +79,7 @@
         width: 70%;
         padding: 10px 0;
         padding-left: 5px;
+        border-right: none;
     }
     
      ::placeholder {
@@ -90,7 +91,17 @@
         background: transparent;
         border: none;
         font-size: 15px;
-        color: #fff;
+        color: #000000;
+        background: #ffffff;
+        opacity: 0.4;
+        border-radius: 5px;
+        height: 39px;
+        width: 30px;
+        transition: all 300ms ease;
+    }
+    
+    .nav__button:hover {
+        font-size: 16px;
     }
     
     .nav-cart {
@@ -260,7 +271,7 @@
         color: #fff;
         background: #A51e36;
         border-radius: 3px;
-        padding: 2px 10px;
+        padding: 6px 13px;
         border: none;
     }
     
@@ -286,9 +297,70 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 100vh;
+        overflow-x: hidden;
     }
     
     .background__icon {
         font-size: 150px;
-        color: #666666
+        color: #666666;
+    }
+    
+    .items__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
+    
+    .selectItem {
+        margin-right: 20px;
+        border-radius: 4px;
+        width: 100%;
+        max-width: 130px;
+    }
+    
+    .items__wrapper--header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+        margin-top: 40px;
+    }
+    
+    .items__title {
+        font-size: 30px;
+        color: #F8B332;
+    }
+    
+    .item__desc {
+        width: 45%;
+        margin-right: 40px;
+        background: #fff;
+    }
+    
+    .item__title--desc {
+        font-size: 18px;
+        color: #F8B332;
+        margin: 10px 0 0 7px;
+    }
+    
+    .add__box--price-star {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+    
+    .price-star {
+        display: flex;
+    }
+    
+    .cost__btn {
+        color: #A51e36;
+        background: #fff;
+        margin: 0 0 0 9px;
+        padding: 6px 13px;
+        border: none;
+        border-radius: 10px;
+        border: 1px solid lightgray;
+        border-bottom-color: #A51e36;
     }
