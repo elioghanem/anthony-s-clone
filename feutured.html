@@ -32,14 +32,14 @@
     <section id="header">
         <div class="row">
             <div class="featers">
-                <img src="./img-anthonys/logo-img-removebg-preview.png" alt="" class="logo__img">
+                <a href="./index.html"><img src="./img-anthonys/logo-img-removebg-preview.png" alt="" class="logo__img"></a>
                 <div class="border"></div>
                 <li class="featers__lists">
-                    <a href="./appe.html" class="featers__list ">Appetizers</a>
+                    <a href="./appe.html" class="featers__list">Appetizers</a>
                 </li>
                 <div class="border"></div>
                 <li class="featers__lists">
-                    <a href="./salad.html" class="featers__list">Salads</a>
+                    <a href="./salad.html" class="featers__list ">Salads</a>
                 </li>
                 <div class="border"></div>
                 <li class="featers__lists">
@@ -47,7 +47,7 @@
                 </li>
                 <div class="border"></div>
                 <li class="featers__lists">
-                    <a href="" class="featers__list">Burgers</a>
+                    <a href="./burgers.html" class="featers__list">Burgers</a>
                 </li>
                 <div class="border"></div>
                 <li class="featers__lists">
@@ -55,7 +55,7 @@
                 </li>
                 <div class="border"></div>
                 <li class="featers__lists">
-                    <a href="./platters.html" class="featers__list">Platters</a>
+                    <a href="./platters.html" class="featers__list ">Platters</a>
                 </li>
                 <div class="border"></div>
                 <li class="featers__lists">
@@ -63,7 +63,7 @@
                 </li>
                 <div class="border"></div>
                 <li class="featers__lists">
-                    <a href="./dessert.html" class="featers__list">Desserts</a>
+                    <a href="./dessert.html" class="featers__list ">Desserts</a>
                 </li>
                 <div class="border"></div>
                 <li class="featers__lists">
@@ -99,19 +99,67 @@
                         <h5 class="fav">My account</h5>
                     </div>
                 </div>
-                <img src="./img-anthonys/home-page-img.png" alt="">
-                <div class="featured__sequ">
-                    <h1 class="featers__title">Featured</h1>
-                    <button class="featured__btn">more</button>
+                <div class="border"></div>
+                <div class="items__wrapper--header">
+                    <h1 class="items__title">Featured</h1>
+                    <select class="selectItem">
+                        <option value="option">lowest price</option>
+                        <option value="option">Default sorting</option>
+                        <option value="option">Highest price</option>
+                        <option value="option">By title up</option>
+                        <option value="option">By title down</option>
+                    </select>
                 </div>
-                <div class="add__box">
-                    <h4 class="add__box--title">Veggiehita</h4>
-                    <div class="add__box--price-star">
-                        <button class="add__btn">ADD</button>
-                        <h5 class="add__box--price">4.25</h5>
-                        <h5 class="usd">USD</h5>
-                        <i class="fa-regular fa-star box-icon"></i>
+                <div class="animation">
+                    <div class="items__wrapper">
+                        <div class="item__desc">
+                            <img src="./img-anthonys/dess1.jpg" alt="" class="item__img">
+                            <div class="item__title--desc">Lemon Breeze</div>
+                            <div class="add__box--price-star">
+                                <div class="button__section">
+                                    <button class="add__btn">ADD</button>
+                                </div>
+                                <div class="price-star">
+                                    <h5 class="add__box--price">3.00</h5>
+                                    <h5 class="usd">USD</h5>
+                                    <i class="fa-regular fa-star box-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__desc">
+                            <img src="./img-anthonys/goatberrySalad.jpg" alt="" class="item__img">
+                            <div class="item__title--desc">Goatberry Salad</div>
+                            <div class="add__box--price-star">
+                                <div class="button__section">
+                                    <button class="add__btn">ADD</button>
+                                </div>
+                                <div class="price-star">
+                                    <h5 class="add__box--price">10.00</h5>
+                                    <h5 class="usd">USD</h5>
+                                    <i class="fa-regular fa-star box-icon"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="items__wrapper">
+                        <div class="item__desc">
+                            <img src="./img-anthonys/home-page-img.png" alt="" class="item__img">
+                            <div class="item__title--desc">Veggiehita</div>
+                            <div class="add__box--price-star">
+                                <div class="button__section">
+                                    <button class="add__btn">ADD</button>
+                                    <button class="cost__btn">CUSTOMIZE</button>
+                                </div>
+                                <div class="price-star">
+                                    <h5 class="add__box--price">4.25</h5>
+                                    <h5 class="usd">USD</h5>
+                                    <i class="fa-regular fa-star box-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
             <div class="backround__gray">
@@ -126,7 +174,6 @@
         </div>
         <h4 class="powered"><i class="fa-solid fa-water"></i> Powered by weevi</h4>
     </footer>
-
 </body>
 
 </html>
