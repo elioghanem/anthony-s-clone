@@ -480,36 +480,10 @@
                     padding-left: 85px;
                 }
                 
-                .btn__arrow {
-                    border-radius: 100%;
-                    padding: 25px;
-                    color: #fff;
-                    background: #A51e36;
-                    cursor: pointer;
-                    font-size: 14px;
-                    opacity: 0.3;
-                }
-                
-                .top__arrow {
-                    font-size: 12px;
-                    position: relative;
-                    margin-left: 4px;
-                }
-                
                 .top__title {
                     color: #A51e36;
                     display: none;
                     margin-left: 5px;
-                }
-                
-                .top__wrapper {
-                    position: fixed;
-                    bottom: 10px;
-                    left: 20px;
-                    transition: all 300ms ease;
-                    margin-bottom: 90px;
-                    margin-right: 40px;
-                    display: none;
                 }
                 
                 .scroll-button {
@@ -526,6 +500,7 @@
                     font-size: 17px;
                     cursor: pointer;
                     margin-bottom: 50px;
+                    margin-left: 20px;
                     transition: opacity 0.3s ease-in-out;
                     animation: top__animation 0.5s;
                 }
@@ -541,16 +516,6 @@
                     100% {
                         opacity: 1;
                     }
-                }
-                
-                .top__wrapper:hover .top__title {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                
-                .btn__show {
-                    display: flex;
                 }
                 
                 .location__wrapper {
