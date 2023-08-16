@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <script src="index.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -81,10 +82,8 @@
                 <li class="featers__lists">
                     <a href="./locate-us.html" class="featers__list">Locate Us</a>
                 </li>
-                <div class="top__wrapper">
-                    <div class="display__none"><a href="#"><i class="fa-solid fa-arrow-up-long btn__arrow"></i></a></div>
-                    <span class="top__title">top <i class="fa-solid fa-arrow-up-long top__arrow"></i></span>
-                </div>
+                <button id="scrollToTopButton" class="scroll-button"><i class="fa-solid fa-arrow-up"></i></button>
+
             </div>
             <div class="home__page">
                 <div class="header__home--page">
@@ -309,10 +308,12 @@
 
                 </div>
             </div>
-            <div class="backround__gray">
-                <i class="fa-solid fa-bag-shopping background__icon"></i>
+
+            <div class="wrapper">
+                <div class="backround__gray">
+                    <i class="fa-solid fa-bag-shopping background__icon"></i>
+                </div>
             </div>
-        </div>
     </section>
     <footer>
         <div class="terms__privacy">

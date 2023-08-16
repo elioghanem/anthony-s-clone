@@ -32,8 +32,6 @@
                     height: 86px;
                     background: #A51e36;
                     animation: nav-animation 2.3s;
-                    z-index: 1;
-                    overflow: hidden;
                 }
                 
                 @keyframes nav-animation {
@@ -336,16 +334,19 @@
                     transition: all 300ms ease;
                 }
                 
+                .wrapper {
+                    display: flex;
+                }
+                
                 .backround__gray {
-                    width: 20%;
+                    width: 300px;
                     background-color: #e3dada;
+                    position: sticky;
+                    top: 0;
                     height: 100vh;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    position: fixed;
-                    right: -20px;
-                    margin-top: -86px;
                 }
                 
                 .background__icon {
@@ -435,7 +436,6 @@
                 footer {
                     height: 60px;
                     width: 100%;
-                    max-width: 1200px;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -512,9 +512,34 @@
                     display: none;
                 }
                 
-                @media(max-height:800px) {
-                    .top__wrapper {
-                        display: flex;
+                .scroll-button {
+                    display: none;
+                    position: fixed;
+                    bottom: 20px;
+                    left: 20px;
+                    width: 60px;
+                    height: 60px;
+                    background-color: #A51e36;
+                    color: #fff;
+                    border: none;
+                    border-radius: 100%;
+                    font-size: 17px;
+                    cursor: pointer;
+                    margin-bottom: 50px;
+                    transition: opacity 0.3s ease-in-out;
+                    animation: top__animation 0.5s;
+                }
+                
+                @keyframes top__animation {
+                    0% {
+                        opacity: 0.7;
+                        transform: translateY(50px);
+                    }
+                    50% {
+                        transform: translateY(-10px);
+                    }
+                    100% {
+                        opacity: 1;
                     }
                 }
                 
