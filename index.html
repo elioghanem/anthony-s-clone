@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -29,6 +30,19 @@
             </div>
         </nav>
     </section>
+
+    <div id="overlay" class="overlay"></div>
+    <div id="popupLogin" class="container__login">
+        <div class="btn__close"><i class="fa-regular fa-circle-xmark" onclick="closePopupLogin()"></i></div>
+        <form class="login__form">
+            <h1 class="login__title">MY ACCOUNT</h1>
+            <input class="login__email" type="email" placeholder="Email or mobile">
+            <input class="login__pass" type="password" placeholder="Password">
+            <button class="Login__btn">LOGIN</button>
+            <a href="">Forgot your Password?</a>
+            <button class="reg__btn">REGISTER</button>
+        </form>
+    </div>
     <section id="header">
         <div class="row">
             <div class="featers">
@@ -96,7 +110,7 @@
                     </div>
                     <div class="acc">
                         <i class="fa-solid fa-person"></i>
-                        <h5 class="fav">My account</h5>
+                        <button class="fav" onclick="openPopupLogin()">My account</button>
                     </div>
                 </div>
                 <img src="./img-anthonys/home-page-img.png" alt="">

@@ -1,15 +1,15 @@
-// // script.js
-// const scrollButton = document.getElementById('top__wrapper');
-// const specificHeight = 300; // Adjust this to your specific height in pixels
+function openPopupLogin() {
+    let popupLogin = document.getElementById("popupLogin");
+    let overlay = document.getElementById("overlay");
 
-// window.addEventListener('scroll', () => {
-//     if (window.scrollY >= specificHeight) {
-//         scrollButton.style.display = 'block';
-//     } else {
-//         scrollButton.style.display = 'none';
-//     }
-// });
+    popupLogin.classList.add("open-popup__login");
+    overlay.classList.add("active");
+}
 
-// scrollButton.addEventListener('click', () => {
-//     window.scrollTo({ top: 0, behavior: 'smooth' });
-// });
+function closePopupLogin() {
+    let popupLogin = document.getElementById("popupLogin");
+    let overlay = document.getElementById("overlay");
+
+    popupLogin.classList.remove("open-popup__login");
+    overlay.classList.remove("active");
+}
