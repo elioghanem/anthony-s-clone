@@ -21,6 +21,10 @@
                 a {
                     text-decoration: none;
                 }
+                
+                main {
+                    padding-top: 80px;
+                }
                 /*nav*/
                 
                 .nav__container {
@@ -31,6 +35,9 @@
                 nav {
                     height: 86px;
                     background: #A51e36;
+                    position: fixed;
+                    width: 100%;
+                    z-index: 1000;
                     animation: nav-animation 2.3s;
                 }
                 
@@ -211,6 +218,7 @@
                 .acc {
                     display: flex;
                     cursor: pointer;
+                    margin-top: 14px;
                     transition: all 300ms ease;
                 }
                 
@@ -227,8 +235,18 @@
                 .header__home--page {
                     display: flex;
                     justify-content: space-between;
+                    height: 70px;
+                    width: 57%;
                     margin-bottom: 25px;
-                    animation: header__home-animation 0.5s;
+                    background: transparent;
+                    position: fixed;
+                    top: 86px;
+                    background: #fff;
+                    transition: all 300ms ease;
+                }
+                
+                .header__home--page.scrolled {
+                    background: linear-gradient(#fafafa 47%, rgba(250, 250, 250, 0.27) 100%);
                 }
                 
                 @keyframes header__home-animation {
@@ -600,7 +618,7 @@
                     width: 350px;
                     height: 400px;
                     background-color: #fff;
-                    position: absolute;
+                    position: fixed;
                     padding: 30px;
                     border-radius: 10px;
                     top: -150%;
@@ -643,7 +661,7 @@
                     position: absolute;
                     top: -33px;
                     right: 173px;
-                    color: #fff;
+                    color: #302f2f;
                     cursor: pointer;
                     font-size: 25px;
                 }
@@ -710,10 +728,10 @@
                 }
                 
                 .container__reg {
+                    position: fixed;
                     width: 350px;
                     height: 500px;
                     background-color: #fff;
-                    position: absolute;
                     padding: 30px;
                     border-radius: 10px;
                     top: -150%;
@@ -725,7 +743,7 @@
                 
                 .open-popup__reg {
                     visibility: visible;
-                    top: 55%;
+                    top: 60%;
                 }
                 
                 .reg__title {

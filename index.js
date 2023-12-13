@@ -57,3 +57,7 @@ function togglePasswordVisibility() {
         eyeClosedIcon.style.display = "none";
     }
 }
+window.addEventListener('scroll', function() {
+    var scrollingHeader = document.getElementById('scrollingHeader');
+    scrollingHeader.classList.toggle('scrolled', window.scrollY > 0);
+});

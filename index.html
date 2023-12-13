@@ -30,143 +30,143 @@
             </div>
         </nav>
     </section>
+    <main>
+        <div id="overlay" class="overlay"></div>
+        <div id="popupLogin" class="container__login">
+            <div class="btn__close"><i class="fa-regular fa-circle-xmark" onclick="closePopupLogin()"></i></div>
+            <form class="login__form">
+                <h1 class="login__title">MY ACCOUNT</h1>
+                <input class="login__email" type="email" placeholder="Email or mobile">
+                <input class="login__pass" type="password" placeholder="Password">
+                <button class="Login__btn">LOGIN</button>
+                <a href="" class="forgot__link">Forgot your Password?</a>
+                <span class="reg__btn" onclick="openPopupReg()">REGISTRATION</span>
 
-    <div id="overlay" class="overlay"></div>
-    <div id="popupLogin" class="container__login">
-        <div class="btn__close"><i class="fa-regular fa-circle-xmark" onclick="closePopupLogin()"></i></div>
-        <form class="login__form">
-            <h1 class="login__title">MY ACCOUNT</h1>
-            <input class="login__email" type="email" placeholder="Email or mobile">
-            <input class="login__pass" type="password" placeholder="Password">
-            <button class="Login__btn">LOGIN</button>
-            <a href="" class="forgot__link">Forgot your Password?</a>
-            <span class="reg__btn" onclick="openPopupReg()">REGISTRATION</span>
-
-        </form>
-    </div>
-    <div id="overlay" class="overlay"></div>
-    <div id="popupReg" class="container__reg">
-        <div class="btn__close"><i class="fa-regular fa-circle-xmark" onclick="closePopupReg()"></i></div>
-        <form class="reg__form">
-            <h1 class="reg__title">CREATE AN ACCOUNT</h1>
-            <div class="flag__input--wrapper">
-                <img src="./img-anthonys/flag.jpeg" alt="" class="img__flag">
-                <input class="phone__input" type="tel" placeholder="71 123 456" pattern="[0-7]{8}" required>
-            </div>
-            <div class="name__wrapper">
-                <input class="name__input" type="text" placeholder="FIRST NAME" required>
-                <input class="name__input" type="text" placeholder="LAST NAME" required>
-            </div>
-            <input class="reg__email" type="email" placeholder="Email" required>
-            <div class="pass__wrapper">
-                <input class="pass__reg" type="password" id="password" placeholder="PASSWORD">
-                <span class="toggle-password" onclick="togglePasswordVisibility()">
+            </form>
+        </div>
+        <div id="overlay" class="overlay"></div>
+        <div id="popupReg" class="container__reg">
+            <div class="btn__close"><i class="fa-regular fa-circle-xmark" onclick="closePopupReg()"></i></div>
+            <form class="reg__form">
+                <h1 class="reg__title">CREATE AN ACCOUNT</h1>
+                <div class="flag__input--wrapper">
+                    <img src="./img-anthonys/flag.jpeg" alt="" class="img__flag">
+                    <input class="phone__input" type="tel" placeholder="71 123 456" pattern="[0-7]{8}" required>
+                </div>
+                <div class="name__wrapper">
+                    <input class="name__input" type="text" placeholder="FIRST NAME" required>
+                    <input class="name__input" type="text" placeholder="LAST NAME" required>
+                </div>
+                <input class="reg__email" type="email" placeholder="Email" required>
+                <div class="pass__wrapper">
+                    <input class="pass__reg" type="password" id="password" placeholder="PASSWORD">
+                    <span class="toggle-password" onclick="togglePasswordVisibility()">
                   <i class="fa fa-eye" id="eye-open"></i>
                   <i class="fa fa-eye-slash" id="eye-closed"></i>
             </div>
             <button class="btn__reg">REGISTER</button>
             <span class="terms__pr">By registering you agree to our <a href="" class="terms__link"> terms and conditions</a></span>
-                <div class="login__acc">HAVE AN ACCOUNT?LOGIN</div>
-        </form>
-        </div>
-        <section id="header">
-            <div class="row">
-                <div class="featers">
-                    <img src="./img-anthonys/logo-img-removebg-preview.png" alt="" class="logo__img">
-                    <div class="border"></div>
-                    <li class="featers__lists">
-                        <a href="./appe.html" class="featers__list ">Appetizers</a>
-                    </li>
-                    <div class="border"></div>
-                    <li class="featers__lists">
-                        <a href="./salad.html" class="featers__list">Salads</a>
-                    </li>
-                    <div class="border"></div>
-                    <li class="featers__lists">
-                        <a href="./half-salad.html" class="featers__list">Half-Salads</a>
-                    </li>
-                    <div class="border"></div>
-                    <li class="featers__lists">
-                        <a href="" class="featers__list">Burgers</a>
-                    </li>
-                    <div class="border"></div>
-                    <li class="featers__lists">
-                        <a href="./sand.html" class="featers__list">Sandwiches</a>
-                    </li>
-                    <div class="border"></div>
-                    <li class="featers__lists">
-                        <a href="./platters.html" class="featers__list">Platters</a>
-                    </li>
-                    <div class="border"></div>
-                    <li class="featers__lists">
-                        <a href="./pizza.html" class="featers__list">Pizza</a>
-                    </li>
-                    <div class="border"></div>
-                    <li class="featers__lists">
-                        <a href="./dessert.html" class="featers__list">Desserts</a>
-                    </li>
-                    <div class="border"></div>
-                    <li class="featers__lists">
-                        <a href="./QAW.html" class="featers__list">Quesadillas And Wraps</a>
-                    </li>
-                    <div class="border"></div>
-                    <li class="featers__lists featers__lists2">
-                        <a href="./drinks.html" class="featers__list ">Drinks</a>
-                    </li>
-                    <div class="border"></div>
-                    <li class="featers__lists featers__lists3">
-                        <a href="./feutured.html" class="featers__list featers__list2">Featured</a>
-                    </li>
-                    <li class="featers__lists">
-                        <a href="./locate-us.html" class="featers__list">Locate Us</a>
-                    </li>
-
-                </div>
-                <div class="home__page">
-                    <div class="header__home--page">
-                        <div class="fav__orders">
-                            <div class="favorite">
-                                <i class="fa-regular fa-star"></i>
-                                <h5 class="fav">My Favorites</h5>
-                            </div>
-                            <div class="orders">
-                                <i class="fa-regular fa-clipboard"></i>
-                                <h5 class="fav">My Orders</h5>
-                            </div>
-                        </div>
-                        <div class="acc">
-                            <i class="fa-solid fa-person"></i>
-                            <button class="fav" onclick="openPopupLogin()">My account</button>
-                        </div>
-                    </div>
-                    <img src="./img-anthonys/home-page-img.png" alt="">
-                    <div class="featured__sequ">
-                        <h1 class="featers__title">Featured</h1>
-                        <button class="featured__btn">more</button>
-                    </div>
-                    <div class="add__box">
-                        <h4 class="add__box--title">Veggiehita</h4>
-                        <div class="add__box--price-star">
-                            <button class="add__btn">ADD</button>
-                            <h5 class="add__box--price">4.25</h5>
-                            <h5 class="usd">USD</h5>
-                            <i class="fa-regular fa-star box-icon"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="backround__gray">
-                    <i class="fa-solid fa-bag-shopping background__icon"></i>
-                </div>
+                    <div class="login__acc">HAVE AN ACCOUNT?LOGIN</div>
+            </form>
             </div>
-        </section>
-        <footer>
-            <div class="terms__privacy">
-                <h5 class="terms">Terms And Conditions </h5>
-                <h5 class="terms">Privacy</h5>
-            </div>
-            <h4 class="powered"><i class="fa-solid fa-water"></i> Powered by weevi</h4>
-        </footer>
+            <section id="header">
+                <div class="row">
+                    <div class="featers">
+                        <img src="./img-anthonys/logo-img-removebg-preview.png" alt="" class="logo__img">
+                        <div class="border"></div>
+                        <li class="featers__lists">
+                            <a href="./appe.html" class="featers__list ">Appetizers</a>
+                        </li>
+                        <div class="border"></div>
+                        <li class="featers__lists">
+                            <a href="./salad.html" class="featers__list">Salads</a>
+                        </li>
+                        <div class="border"></div>
+                        <li class="featers__lists">
+                            <a href="./half-salad.html" class="featers__list">Half-Salads</a>
+                        </li>
+                        <div class="border"></div>
+                        <li class="featers__lists">
+                            <a href="" class="featers__list">Burgers</a>
+                        </li>
+                        <div class="border"></div>
+                        <li class="featers__lists">
+                            <a href="./sand.html" class="featers__list">Sandwiches</a>
+                        </li>
+                        <div class="border"></div>
+                        <li class="featers__lists">
+                            <a href="./platters.html" class="featers__list">Platters</a>
+                        </li>
+                        <div class="border"></div>
+                        <li class="featers__lists">
+                            <a href="./pizza.html" class="featers__list">Pizza</a>
+                        </li>
+                        <div class="border"></div>
+                        <li class="featers__lists">
+                            <a href="./dessert.html" class="featers__list">Desserts</a>
+                        </li>
+                        <div class="border"></div>
+                        <li class="featers__lists">
+                            <a href="./QAW.html" class="featers__list">Quesadillas And Wraps</a>
+                        </li>
+                        <div class="border"></div>
+                        <li class="featers__lists featers__lists2">
+                            <a href="./drinks.html" class="featers__list ">Drinks</a>
+                        </li>
+                        <div class="border"></div>
+                        <li class="featers__lists featers__lists3">
+                            <a href="./feutured.html" class="featers__list featers__list2">Featured</a>
+                        </li>
+                        <li class="featers__lists">
+                            <a href="./locate-us.html" class="featers__list">Locate Us</a>
+                        </li>
 
+                    </div>
+                    <div class="home__page">
+                        <div class="header__home--page" id="scrollingHeader">
+                            <div class="fav__orders">
+                                <div class="favorite">
+                                    <i class="fa-regular fa-star"></i>
+                                    <h5 class="fav">My Favorites</h5>
+                                </div>
+                                <div class="orders">
+                                    <i class="fa-regular fa-clipboard"></i>
+                                    <h5 class="fav">My Orders</h5>
+                                </div>
+                            </div>
+                            <div class="acc">
+                                <i class="fa-solid fa-person"></i>
+                                <span class="fav" onclick="openPopupLogin()">My account</span>
+                            </div>
+                        </div>
+                        <img src="./img-anthonys/home-page-img.png" alt="">
+                        <div class="featured__sequ">
+                            <h1 class="featers__title">Featured</h1>
+                            <button class="featured__btn">more</button>
+                        </div>
+                        <div class="add__box">
+                            <h4 class="add__box--title">Veggiehita</h4>
+                            <div class="add__box--price-star">
+                                <button class="add__btn">ADD</button>
+                                <h5 class="add__box--price">4.25</h5>
+                                <h5 class="usd">USD</h5>
+                                <i class="fa-regular fa-star box-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backround__gray">
+                        <i class="fa-solid fa-bag-shopping background__icon"></i>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="terms__privacy">
+                    <h5 class="terms">Terms And Conditions </h5>
+                    <h5 class="terms">Privacy</h5>
+                </div>
+                <h4 class="powered"><i class="fa-solid fa-water"></i> Powered by weevi</h4>
+            </footer>
+    </main>
 </body>
 
 </html>
