@@ -9,6 +9,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function openPopupLogin() {
+    // Check if the registration container is open, and return if true
+    if (document.body.classList.contains("registration-open")) {
+        return;
+    }
+
     let popupLogin = document.getElementById("popupLogin");
     let overlay = document.getElementById("overlay");
 
@@ -25,6 +30,9 @@ function closePopupLogin() {
 }
 
 function openPopupReg() {
+    // Set a class on the body to indicate that the registration container is open
+    document.body.classList.add("registration-open");
+
     closePopupLogin();
     let popupReg = document.getElementById("popupReg");
     let overlay = document.getElementById("overlay");
@@ -34,6 +42,9 @@ function openPopupReg() {
 }
 
 function closePopupReg() {
+    // Remove the class on the body indicating that the registration container is open
+    document.body.classList.remove("registration-open");
+
     let popupReg = document.getElementById("popupReg");
     let overlay = document.getElementById("overlay");
 
