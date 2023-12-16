@@ -13,10 +13,25 @@ let customizationArray = [];
 function showCustomizePopup(itemIndex) {
     const item = itemsArray[itemIndex];
     const popupContainer = document.getElementById('customizePopup');
-    popupContainer.style.display = 'block';
+    popupContainer.style.top = '430px';
+
 }
 
 function closeCustomizePopup() {
     const popupContainer = document.getElementById('customizePopup');
-    popupContainer.style.display = 'none';
+    popupContainer.style.top = '-150%';
+}
+
+function toggleCheckbox() {
+    var checkbox = document.getElementById('myCheckbox');
+    var checkboxTitle = document.querySelector('.checkbox-title');
+    var labelPrice = document.querySelector('.label__price');
+
+    if (checkbox.checked) {
+        checkboxTitle.classList.add('checkbox-selected');
+        labelPrice.classList.add('price-selected');
+    } else {
+        checkboxTitle.classList.remove('checkbox-selected');
+        labelPrice.classList.remove('price-selected');
+    }
 }

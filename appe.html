@@ -170,7 +170,9 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="popup-container" id="customizePopup">
+                                    <div class="btn__close--cust"><i class="fa-regular fa-circle-xmark" onclick="closeCustomizePopup()"></i></div>
                                     <div class="cust__img--para-wrapper">
                                         <div class="add__remove--wrapper">
                                             <img src="./img-anthonys/theKillerAssembly-img.png" alt="" class="cust__img">
@@ -190,10 +192,25 @@
                                         <h2 class="item__cust">ADD CUP OF</h2>
                                         <div class="border__line"></div>
                                         <div class="checkbox">
-                                            <input type="checkbox" id="myCheckbox" name="myCheckbox">
-                                            <label for="" class="checkbox">Blue cheese dip</label>
+                                            <input type="checkbox" id="myCheckbox" name="myCheckbox" onclick="toggleCheckbox()">
+                                            <label for="myCheckbox" class="checkbox-title">Blue cheese dip</label>
                                             <div class="label__price">0.60 USD</div>
                                         </div>
+                                        <h2 class="item__cust">WINGS DIPPED IN</h2>
+                                        <div class="border__line"></div>
+                                        <div class="radio">
+                                            <input type="radio" id="myCheckbox" name="myCheckbox" onclick="toggleCheckbox()">
+                                            <label for="myCheckbox" class="checkbox-title">BBQ</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" id="myCheckbox" name="myCheckbox" onclick="toggleCheckbox()">
+                                            <label for="myCheckbox" class="checkbox-title">Buffalo</label>
+                                        </div>
+                                        <div class="border__line input__border"></div>
+                                        <textarea cols="20" rows="5"></textarea>
+                                        <div class="border__line input__border"></div>
+                                        <div class="add__cart--price-wrapper"></div>
+                                        <button class="cust__addToCart">ADD TO CART <span class="btn__price">12.00</span></button>
                                     </div>
                                 </div>
                                 <div class="item__desc">
