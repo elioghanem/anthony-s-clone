@@ -10,6 +10,7 @@
     />
     <script src="script.js"></script>
     <script src="index.js"></script>
+
 </head>
 
 <body>
@@ -160,7 +161,7 @@
                                     <div class="add__box--price-star">
                                         <div class="button__section">
                                             <button class="add__btn">ADD</button>
-                                            <button class="cost__btn">CUSTOMIZE</button>
+                                            <button class="cost__btn" onclick="showCustomizePopup(0)">CUSTOMIZE</button>
                                         </div>
                                         <div class="price-star">
                                             <h5 class="add__box--price">10.50</h5>
@@ -169,6 +170,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="popup-container" id="customizePopup"></div>
                                 <div class="item__desc">
                                     <img src="./img-anthonys/blazinFries2.jpg" alt="" class="item__img">
                                     <div class="item__title--desc">Blazin Fries</div>
@@ -281,7 +283,7 @@
                                     <div class="add__box--price-star">
                                         <div class="button__section">
                                             <button class="add__btn">ADD</button>
-                                            <button class="cost__btn">CUSTOMIZE</button>
+                                            <button class="cost__btn" onclick="showCustomizePopup(1)">CUSTOMIZE</button>
                                         </div>
                                         <div class="price-star">
                                             <h5 class="add__box--price">4.20</h5>
@@ -410,6 +412,7 @@
                 <h4 class="powered"><i class="fa-solid fa-water"></i> Powered by weevi</h4>
             </footer>
     </main>
+    <script src="custom.js"></script>
 </body>
 
 </html>
